@@ -4,6 +4,6 @@ sum = number1 + number2
 difference = number1 - number2 
 product = number1 * number2
 
-print("Sum of " + number1 + "and" + number2 + "is" , sum)
-print("Subtraction of " + number1 + "and" + number2 + "is" , difference)
-print("multiplication of " + number1 + "and" + number2 + "is" , product)
+print("Sum of " + str(number1) + "and" + str(number2) + "is" + str(sum))
+print("Subtraction of " + str(number1) + "and" + str(number2) + "is"+ str(difference))
+print("multiplication of " + str(number1) + "and" + str(number2) + "is"+ str(product))
