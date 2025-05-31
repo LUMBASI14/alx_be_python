@@ -13,6 +13,8 @@ match operation:
     multiplication = first_number * second_number
     print("the result is" + str(multiplication))
   case "/":
-    division = first_number / second_number
-    print("the result is" + str(division))
-
+    if second_number >0:
+      division = first_number / second_number
+      print("the result is" + str(division))
+    print("you cannot divide by 0")
+    
