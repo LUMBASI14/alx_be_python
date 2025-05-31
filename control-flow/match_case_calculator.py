@@ -5,14 +5,14 @@ operation = str(input("Choose the operation (+, -, *, /):"))
 match operation:
   case "+":
     sum = first_number + second_number
-    print(str(sum))
+    print("the result is " + str(sum))
   case "-":
     subtraction = first_number - second_number
-    print(str(subtraction))
+    print("the result is" + str(subtraction))
   case "*":
     multiplication = first_number * second_number
-    print(str(multiplication))
+    print("the result is" + str(multiplication))
   case "/":
     division = first_number / second_number
-    print(str(division))
+    print("the result is" + str(division))
 
