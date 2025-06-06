@@ -12,8 +12,7 @@ def perform_operation(num1, num2, operation):
   def division(num1, num2):
     if (num2 == 0):
       return "math error"
-    else:
-      return num1 / num2
+    return num1 / num2
 
   def calculation(num1, num2, operation):
     match operation:
