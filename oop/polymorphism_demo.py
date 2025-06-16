@@ -1,10 +1,10 @@
 class Shape:
   def __init__(self):
-    self.area = area
+    self.area = none
 
 class Rectangle(Shape):
   def area(self, length, width):
-    super().__init__(self)
+    super().__init__()
     self.length = length
     self.width = width
     self.area = self.length * self.width
@@ -13,7 +13,7 @@ class Rectangle(Shape):
 class Circle(Shape):
   import math
   def area(self, radius):
-    super().__init__(self)
+    super().__init__()
     self.radius = radius
     self.area = math.pi * (radius ** 2)
     return self.area
