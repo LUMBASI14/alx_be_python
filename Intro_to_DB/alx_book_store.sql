@@ -19,26 +19,25 @@ mycursor.execute("""
     publication_date DATE,
     PRIMARY KEY (book_id),
     FOREIGN KEY (author_id) REFERENCES Authors(author_id)
-  )
+  );
   CREATE TABLE Authors(
     author_id INT ,
     author_name VARCHAR(215),
     PRIMARY KEY (author_id)
-  )
+  );
   CREATE TABLE Customers(
     customer_id INT ,
     customer_name VARCHAR(215),
     email VARCHAR(215),
     address TEXT,
     PRIMARY KEY (customer_id)
-  )
-  CREATE TABLE Orders(
-    order_id INT ,
-    customer_id INT ,
-    order_date DATE,
-    PRIMARY KEY (order_id),
+  );
+  CREATE TABLE IF NOT EXISTS Orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT NOT NULL,
+    order_date DATE NOT NULL,
     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
-  )
+);
   CREATE TABLE Order_details(
     orderdetailid INT  ,
     order_id INT ,
@@ -47,7 +46,7 @@ mycursor.execute("""
     PRIMARY KEY (orderdetailid),
     FOREIGN KEY (order_id) REFERENCES Orders (order_id),
     FOREIGN KEY (book_id) REFERNCES Books (book_id)
-  )
+  );
 """)
 
 
