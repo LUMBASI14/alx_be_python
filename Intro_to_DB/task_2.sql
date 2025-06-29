@@ -1,7 +1,7 @@
 import mysql.connector
 CREATE DATABASE IF NOT EXISTS myDatabase;
 USE myDatabase;
--
+
 myDatabase = mysql.connector.connect(
     host="penguin@penguin--Zbook",
     user="root",
