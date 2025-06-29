@@ -1,5 +1,7 @@
 import mysql.connector
-
+CREATE DATABASE IF NOT EXISTS alx_book_store;
+USE alx_book_store;
+-
 alx_book_store = mysql.connector.connect(
     host="penguin@penguin--Zbook",
     user="root",
