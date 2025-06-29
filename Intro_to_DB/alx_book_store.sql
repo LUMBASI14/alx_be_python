@@ -37,7 +37,7 @@ mycursor.execute("""
     customer_id INT 
     order_date DATE
     PRIMARY KEY (order_id)
-    FOREIGN KEY (customer_id) REFERENCES Customers (customer_id)
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
   )
   CREATE TABLE Order_details(
     orderdetailid INT  
